@@ -7,7 +7,7 @@ const DIR_BASE: string = 'C:/_MIS/github/home-automation-camera-ftp/test-image-d
 const DAYS_OF_FOLDERS: number = 10;
 const timeNow = moment();
 const time10daysAgo = timeNow.subtract(DAYS_OF_FOLDERS, 'day');
-var ddd = 222;
+// var ddd = 222; // testing the linter
 // ### create all folders needed
 Array(DAYS_OF_FOLDERS)
     .fill('')
