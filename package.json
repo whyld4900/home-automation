@@ -2,18 +2,22 @@
   "name": "home-automation-camera-ftp",
   "version": "1.0.0",
   "description": "Need image files to be in YYYY-MM-DD folders.",
-  "main": "index.js",
+  "main": "src/main.ts",
   "dependencies": {
     "fs-extra": "7.0.1",
-    "moment": "2.23.0"
+    "moment": "2.23.0",
+    "rimraf": "2.6.3"
   },
   "devDependencies": {
     "@types/fs-extra": "5.0.4",
-    "@types/moment": "2.13.0"
+    "@types/moment": "2.13.0",
+    "@types/rimraf": "2.0.2",
+    "ts-lint": "4.5.1",
+    "typescript": "3.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node ./script.ts"
+    "lint": "tslint -c tslint.json src/*.ts",
+    "start": "ts-node src/main.ts"
   },
   "repository": {
     "type": "git",
